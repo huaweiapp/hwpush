@@ -27,6 +27,11 @@ class GetAccessToken extends Message
         return self::$_instance;
     }
 
+    /**
+     * 获取access_token
+     *
+     * @return bool|string
+     */
     public function get()
     {
         $ch = curl_init(self::BASE_LOGIN_URL . '/oauth2/v2/token');
